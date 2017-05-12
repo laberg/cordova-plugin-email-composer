@@ -111,7 +111,11 @@ exports.open = function (options, callback, scope) {
         exec(fn, null, 'EmailComposer', 'open', [options]);
     };
 
-    exec(onAvailable, null, 'EmailComposer', 'isAvailable', [options.app]);
+    if (isAndroid) {
+        exec(fn, null, 'EmailComposer', 'open', [options]);
+    } else {
+        exec(onAvailable, null, 'EmailComposer', 'isAvailable', [options.app]);
+    }
 };
 
 /**
