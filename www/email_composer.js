@@ -97,7 +97,7 @@ exports.open = function (options, callback, scope) {
     var onAvailable = function (isPossible, withScheme) {
 
         if (!isPossible)
-            return fn();
+            return fn(true);
 
         if (!withScheme) {
             if (window.console) { console.log('Cannot open app'); }
