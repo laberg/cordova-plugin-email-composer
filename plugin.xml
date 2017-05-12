@@ -33,13 +33,13 @@
         the editing and sending an email message
     </description>
 
-    <repo>https://github.com/katzer/cordova-plugin-email-composer.git</repo>
+    <repo>https://github.com/laberg/cordova-plugin-email-composer.git</repo>
 
     <keywords>appplant, email</keywords>
 
     <license>Apache 2.0</license>
 
-    <author>Sebastián Katzer</author>
+    <author>Hamdi Hagberg</author>
 
     <engines>
         <engine name="cordova" version=">=3.0.0" />
