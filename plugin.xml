@@ -76,66 +76,6 @@
 
     </platform>
 
-    <!-- android -->
-    <platform name="android">
-
-        <config-file target="res/xml/config.xml" parent="/*">
-            <feature name="EmailComposer">
-                <param name="android-package"
-                       value="de.appplant.cordova.emailcomposer.EmailComposer"/>
-            </feature>
-        </config-file>
-
-        <config-file target="AndroidManifest.xml" parent="/manifest">
-            <uses-permission android:name="android.permission.GET_ACCOUNTS" />
-        </config-file>
-
-        <source-file
-            src="src/android/EmailComposer.java"
-            target-dir="src/de/appplant/cordova/emailcomposer" />
-
-        <source-file
-            src="src/android/EmailComposerImpl.java"
-            target-dir="src/de/appplant/cordova/emailcomposer" />
-
-    </platform>
-
-    <!-- amazon-fireos -->
-    <platform name="amazon-fireos">
-
-        <config-file target="res/xml/config.xml" parent="/*">
-            <feature name="EmailComposer">
-                <param name="android-package"
-                       value="de.appplant.cordova.emailcomposer.EmailComposer"/>
-            </feature>
-        </config-file>
-
-        <config-file target="AndroidManifest.xml" parent="/manifest">
-            <uses-permission android:name="android.permission.GET_ACCOUNTS" />
-        </config-file>
-
-        <source-file
-            src="src/android/EmailComposer.java"
-            target-dir="src/de/appplant/cordova/emailcomposer" />
-
-        <source-file
-            src="src/android/EmailComposerImpl.java"
-            target-dir="src/de/appplant/cordova/emailcomposer" />
-
-    </platform>
-
-    <!-- windows -->
-    <platform name="windows">
-
-        <js-module src="src/windows/EmailComposerProxy.js" name="EmailComposerProxy">
-            <runs />
-        </js-module>
-        <js-module src="src/windows/EmailComposerProxyImpl.js" name="EmailComposerProxyImpl">
-            <runs />
-        </js-module>
-
-    </platform>
-
     <!-- browser -->
     <platform name="browser">
 

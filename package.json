@@ -6,9 +6,6 @@
     "id": "de.appplant.cordova.plugin.email-composer",
     "platforms": [
       "ios",
-      "android",
-      "amazon-fireos",
-      "windows",
       "browser"
     ]
   },
@@ -22,9 +19,6 @@
     "cordova",
     "ecosystem:cordova",
     "cordova-ios",
-    "cordova-android",
-    "cordova-amazon-fireos",
-    "cordova-windows",
     "cordova-browser"
   ],
   "engines": [
